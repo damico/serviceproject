@@ -9,4 +9,34 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ReadTasks</display-name>
+    <servlet-name>ReadTasks</servlet-name>
+    <servlet-class>org.jdamico.serviceproject.servlets.ReadTasks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadTasks</servlet-name>
+    <url-pattern>/ReadTasks</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReadProjects</display-name>
+    <servlet-name>ReadProjects</servlet-name>
+    <servlet-class>org.jdamico.serviceproject.servlets.ReadProjects</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadProjects</servlet-name>
+    <url-pattern>/ReadProjects</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Dashboard</display-name>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>org.jdamico.serviceproject.servlets.Dashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/Dashboard</url-pattern>
+  </servlet-mapping>
 </web-app>
