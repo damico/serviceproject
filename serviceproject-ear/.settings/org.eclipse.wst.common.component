@@ -2,5 +2,16 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="serviceproject-ear">
         <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="serviceproject-web.war" deploy-path="/" handle="module:/resource/serviceproject-web/serviceproject-web">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="serviceproject-ejb.jar" deploy-path="/" handle="module:/resource/serviceproject-ejb/serviceproject-ejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="serviceproject-um.jar" deploy-path="/lib" handle="module:/resource/serviceproject-um/serviceproject-um">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>

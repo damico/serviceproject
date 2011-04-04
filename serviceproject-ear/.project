@@ -3,6 +3,7 @@
 	<name>serviceproject-ear</name>
 	<comment></comment>
 	<projects>
+		<project>serviceproject-web</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

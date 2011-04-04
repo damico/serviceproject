@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application id="Application_ID" version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
- <display-name>serviceproject-ear</display-name> 
- </application> 
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:application="http://java.sun.com/xml/ns/javaee/application_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd" id="Application_ID" version="5">
+  <display-name>serviceproject-ear</display-name>
+  <module>
+    <web>
+      <web-uri>serviceproject-web.war</web-uri>
+      <context-root>serviceproject-web</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>serviceproject-ejb.jar</ejb>
+  </module>
+</application>
