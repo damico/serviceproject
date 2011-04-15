@@ -3,6 +3,8 @@
 	<name>serviceproject-ear</name>
 	<comment></comment>
 	<projects>
+		<project>serviceproject-ejb</project>
+		<project>serviceproject-um</project>
 		<project>serviceproject-web</project>
 	</projects>
 	<buildSpec>
