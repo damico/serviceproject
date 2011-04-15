@@ -12,8 +12,11 @@ public class Task {
 	private String name;
 	private int id;
 	private String docurl;
+	private String eta;
 	private Date initDate;
 	private Date endDate;
+	private int type;
+	private String taskDescription;
 	
 	public String getName() {
 		return name;
@@ -45,15 +48,41 @@ public class Task {
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
-	
-	public Task(String name, int id, String docurl, Date initDate, Date endDate) {
+	public int getType() {
+		return type;
+	}
+	public void setType(int type) {
+		this.type = type;
+	}
+	public String getTaskDescription() {
+		return taskDescription;
+	}
+	public void setTaskDescription(String taskDescription) {
+		this.taskDescription = taskDescription;
+	}
+	public String getEta() {
+		return eta;
+	}
+	public void setEta(String eta) {
+		this.eta = eta;
+	}
+	public Task(String name, int id, String docurl, String eta, Date initDate,
+			Date endDate, int type, String taskDescription) {
 		super();
 		this.name = name;
 		this.id = id;
 		this.docurl = docurl;
+		this.eta = eta;
 		this.initDate = initDate;
 		this.endDate = endDate;
+		this.type = type;
+		this.taskDescription = taskDescription;
 	}
+	
+	
+	
+	
+	
 	
 	
 	
