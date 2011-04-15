@@ -3,5 +3,5 @@ import javax.ejb.Local;
 
 @Local
 public interface ReadTaskLocal {
-
+	public String getTasksJSON(int projectId);
 }

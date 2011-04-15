@@ -1,30 +1,31 @@
 package org.jdamico.serviceproject.ejbs;
 
+import javax.annotation.Resource;
 import javax.ejb.Stateless;
+
+import org.jdamico.serviceproject.components.Controller;
+import org.jdamico.serviceproject.dataobjects.Project;
 
 /**
  * Session Bean implementation class ReadProjects
  */
 @Stateless
-public class ReadProjects implements ReadProjectsRemote, ReadProjectsLocal {
 
+public class ReadProjects implements ReadProjectsRemote, ReadProjectsLocal {
+	
     /**
      * Default constructor. 
      */
+	
     public ReadProjects() {
-        // TODO Auto-generated constructor stub
     }
     
-    public String getProjectsJSON(){
-    	String json = 	"{\"serviceproject\": {" +
-    					"	\"projects\":[" +
-    					"		{\"name\": \"project_A\"," +
-    					"		 \"customer\": \"A\"" +
-    					"		}," +
-    					"		{\"name\": \"project_B\"," +
-    					"		 \"customer\": \"B\"" +
-    					"		}]," +
-    					"}}";
-    	return json;
+    @Resource(name="jdbc/postgres")
+    public String getProjectsJSON(){ 	
+    	return Controller.getInstance().getProjectsJSON();
+    }
+    
+    public void addProject(Project project){
+    	Controller.getInstance().addProject(project);
     }
 }
