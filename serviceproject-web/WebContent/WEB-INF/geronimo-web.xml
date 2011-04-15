@@ -9,4 +9,8 @@
         </dep:moduleId>
     </dep:environment>
     <web:context-root>/serviceproject-web</web:context-root>
+    <name:ejb-local-ref>
+        <name:ref-name>ejb/ReadProjects</name:ref-name>
+        <name:ejb-link>org.jdamico.serviceproject.ejbs.ReadProjectsLocal</name:ejb-link>
+    </name:ejb-local-ref>
 </web:web-app>
