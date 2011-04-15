@@ -7,5 +7,13 @@
             <dep:version>1.0</dep:version>
             <dep:type>car</dep:type>
         </dep:moduleId>
+        <dep:dependencies>
+            <dep:dependency>
+                <dep:groupId>console.dbpool</dep:groupId>
+                <dep:artifactId>jdbc_postgres</dep:artifactId>
+                <dep:version>1.0</dep:version>
+                <dep:type>car</dep:type>
+            </dep:dependency>
+        </dep:dependencies>
     </dep:environment>
 </app:application>
